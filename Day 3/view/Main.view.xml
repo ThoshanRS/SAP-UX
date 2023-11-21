@@ -1,0 +1,5 @@
+<mvc:View xmnls:view="sap.ui.core.mvc" xmnls="sap.m" controllerName="com.ibm.simpleapp.controller.js">
+<!--sap.ui.core.mvc is a library for which we are giving an alias name, view. Now, mvc:View is the library which has the lib <sap class="ui core mvc">
+-->
+<button text="text"/>
+</mvc:view>

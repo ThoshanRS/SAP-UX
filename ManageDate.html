@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+<script
+    id="sap-ui-bootstrap"
+    src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+    data-sap-ui-theme="sap_belize"
+    data-sap-ui-libs="sap.m"
+    data-sap-ui-resourceroots='{"com.ui5learners": "./"}'
+    data-sap-ui-compatVersion="edge"
+    ></script>
+
+    <script>
+        var oButton = new sap.m.Button({ text: "Show Date"});
+        oButton.placeAt("target");
+        oButton.attachPress(function () {
+        sap.ui.require(["com/ui5learners/define"], function (Definemodule) {
+                console.log(new Date()+'date');
+                Definemodule.showDatefunction(new Date());
+            });
+        });
+
+    </script>
+
+</head>
+<body id="content">
+
+  <div id="target"></div>  
+</body>
+</html>
